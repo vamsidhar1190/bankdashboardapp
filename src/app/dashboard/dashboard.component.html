@@ -91,7 +91,7 @@
             <div class="d-flex justify-content-between p-2">
                 <h5 class="">All Expenses</h5>
                 <p-dropdown [options]="data" [(ngModel)]="selectedyears" optionLabel="name"
-                    class="drop-data"  (onClick)="expensesdata()"></p-dropdown>
+                    class="drop-data"  (onChange)="expensesdata()"></p-dropdown>
 
             </div>
             <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart" [labels]="chartOptions2.labels"
@@ -142,7 +142,7 @@
             <div class="d-flex justify-content-between">
                 <h5>Transactions</h5>
                 <p-dropdown [options]="years" [(ngModel)]="selectdata" optionLabel="name"
-                    class="drop-data" (onClick)="onDropdownChange()" ></p-dropdown>
+                    class="drop-data" (onChange)="onDropdownChange()" ></p-dropdown>
 
             </div>
             <div *ngFor="let data of transactions" class="main-data">
