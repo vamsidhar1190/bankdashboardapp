@@ -14,7 +14,8 @@
     width: 50px;
     height: 50px;
 }
-.main-data-second{
+
+.main-data-second {
     width: 74%;
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,7 @@
 //     border-radius: 5px;
 // }
 
-.pi-ellipsis-v{
+.pi-ellipsis-v {
     display: none;
 }
 
@@ -310,89 +311,303 @@
     top: 30px;
 }
 
-.expenes-data{
+.expenes-data {
     display: flex;
     justify-content: space-around;
 }
-.barchart-data{
+
+.barchart-data {
     width: 60%;
 }
-.main-data-charts{
+
+.main-data-charts {
     display: flex;
     gap: 10px;
     justify-content: space-between;
 }
-.expense-amount{
+
+.expense-amount {
     font-size: 20px;
     font-weight: 600;
 }
-.expens-data{
+
+.expens-data {
     font-size: 15px;
 }
-.piechart{
+
+.piechart {
     width: 39%;
 }
-.bal-data{
+
+.bal-data {
     width: 25%;
     padding: 20px;
 }
-.amount-bal{
+
+.amount-bal {
     font-size: 35px;
+    margin: 0px;
+    padding-right: 7px;
 }
-.balance-data{
+
+.balance-data {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.currenty-data{
+
+.currenty-data {
     display: flex;
     justify-content: space-around;
 }
-.btn-data{
+
+.btn-data {
     margin-top: 10px;
     background-color: #b4b6d8b8;
     font-size: 20px;
     color: blue;
 }
-.increase-amount{
+
+.increase-amount {
     color: green;
+    margin: 0px;
 }
-.decrease-amount{
+
+.decrease-amount {
     color: red;
+    margin: 0px;
+
 }
-.transaction-img{
+
+.transaction-img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.transactions-data{
+
+.transactions-data {
     display: flex;
     gap: 10px;
 }
-.main-data{
+
+.main-data {
     display: flex;
     justify-content: space-around;
 }
-.main-data h6{
+
+.main-data h6 {
     margin-top: 15px;
 }
 
-.transactions{
+.transactions {
     width: 74%;
 }
-.main-card-data{
+
+.main-card-data {
     width: 25%;
 }
-.transactions{
+
+.transactions {
     padding: 10px
 }
-.transfer-img{
+
+.transfer-img {
     padding: 15px;
 }
-.buttons-data{
+
+.buttons-data {
     display: flex;
+    gap: 5px;
     padding: 20px;
     justify-content: space-around;
 }
-.card-debit-details{
+
+.card-debit-details {
     width: 25%;
 }
+.p-avtar-group-block .p-avatar-group{
+    justify-content: space-between;
+}
+
+// tab responsive starts here
+
+@media only screen and (min-width:768px) and (max-width:1028px) {
+    .cards-main {
+flex-wrap: wrap;
+        padding: 0px !important;
+   gap: 15px;
+    }
+
+    .cards {
+        width: 48%;
+        text-align: center;
+    }
+
+    .img-icon-content-block {
+        justify-content: center !important;
+    }
+
+    .card-balance {
+        font-size: 30px;
+    }
+    h5{
+        font-size: 28px;
+    }
+
+    .card-amount {
+        font-size: 24px;
+    }
+
+    .card-debit-details {
+        width: 100%;
+    }
+    .main-data-charts{
+        padding: 0px !important;
+    margin-top: 12px;
+    flex-direction: column;
+    }
+    .main-data-second {
+        width: 100%;
+flex-direction: column;
+    }
+    .barchart-data,
+    .bal-data{
+        width: 100%;
+    }
+    .piechart{
+        width: 100%;
+        margin-top: 12px;
+
+    }
+    .bal-data{
+        margin-top: 2px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .increase-amount{
+        font-size: 22px;
+    }
+    .decrease-amount{
+        font-size: 22px;
+
+    }
+    p{
+        font-size: 20px;
+
+    }
+    .expens-data{
+        font-size: 20px;
+
+    }
+    .transactions-data{
+        flex-direction: column;
+        padding: 0px !important;
+   
+    }
+    .transactions{
+        width: 100%;
+        margin-top: 10px;
+        h6{
+            font-size: 16px ;
+        }
+
+    }
+    .main-card-data{
+        width: 100%;
+
+    }
+    .amount-bal{
+        font-size: 26px;
+    }
+    
+    .btn-data {
+        margin-top: 0px; 
+        font-size: 20px;
+    }
+    .buttons-data{
+        button{
+            font-size: 20px;
+        }
+    }
+   
+}
+
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px) {
+    .cards-main {
+        flex-direction: column;
+        padding: 0px !important;
+   margin-top: 6px;
+    }
+
+    .cards {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-icon-content-block {
+        justify-content: center !important;
+    }
+
+    .card-balance {
+        font-size: 20px;
+    }
+
+    .card-amount {
+        font-size: 22px;
+    }
+
+    .card-debit-details {
+        width: 100%;
+    }
+    .main-data-charts{
+        padding: 0px !important;
+    margin-top: 12px;
+    flex-direction: column;
+    }
+    .main-data-second {
+        width: 100%;
+flex-direction: column;
+    }
+    .barchart-data,
+    .bal-data{
+        width: 100%;
+    }
+    .piechart{
+        width: 100%;
+        margin-top: 12px;
+
+    }
+    .transactions-data{
+        flex-direction: column;
+        padding: 0px !important;
+   
+    }
+    .transactions{
+        width: 100%;
+        margin-top: 10px;
+        h6{
+            font-size: 11px ;
+        }
+
+    }
+    .main-card-data{
+        width: 100%;
+
+    }
+    .amount-bal{
+        font-size: 24px;
+    }
+    
+    .btn-data {
+        margin-top: 0px; 
+        font-size: 17px;
+    }
+   
+}
+
+// mobile responsive ends here

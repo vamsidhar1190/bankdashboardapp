@@ -47,3 +47,36 @@
 .barchart-data .apexcharts-toolbar{
     right: 100px;
 }
+body{
+    font-family: sans-serif;
+}
+.p-avtar-group-block .p-avatar-group{
+    justify-content: space-between;
+}
+
+// tab responsive starts here
+
+@media only screen and (min-width:768px) and (max-width:1028px){
+
+    .p-avtar-group-block .p-avatar-group{
+        justify-content: space-between;
+    }
+    .piechart   .apexcharts-canvas{
+        margin: 0 auto;
+    }
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+
+    .p-avtar-group-block .p-avatar-group{
+        justify-content: space-between;
+    }
+    .piechart   .apexcharts-canvas{
+        margin: 0 auto;
+    }
+}
+// mobile responsive ends here

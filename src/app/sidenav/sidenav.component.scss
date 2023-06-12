@@ -376,7 +376,112 @@
     color: #6b8bca;
   }
 
+// tab responsive starts here
 
+@media only screen and (min-width:768px) and (max-width:1028px){
+  
+
+    .icons{
+      font-size: 30px;
+    }
+  .home-section{
+    margin-top: 0px !important ;
+  }
+    
+    .surface-ground{
+      padding: 20px;
+    }
+    .form-control{
+      width: 60%;
+      position: absolute;
+right: 0px;
+top: -16px;
+
+    }
+    .p-input-icon-left > i:first-of-type {
+      left: -2.5rem;
+      z-index: 1;
+  }
+  .sidebar .nav-links li i {
+font-size: 19px;
+  }
+  .sidebar  .nav-links  li  a  .link_name  {
+    font-size: 19px;
+  }
+
+}
+// tab responsive ends here
+
+
+// mobile responsive starts here
+@media only screen and (max-width:767px){
+.sidebar.sidebar-close{
+display: none;
+}
+.sidebar{
+  width: 180px;
+}
+.home-section {
+  position: relative;
+  height: 100vh;
+  left: 0px;
+  width: calc(100% - 0px);
+  margin-top: 0px !important;
+}
+.form-control{
+  width: 10%;
+  position: absolute;
+    right: -12px;
+    top: -21px;
+}
+.icons{
+  font-size: 20px;
+}
+.profile-imgs {
+  width: 40px;
+  height: 40px;
+}
+.home-section .home-header {
+  height: 50px;
+  // align-items: flex-start;
+}
+.dashboard-heading {
+  position: relative;
+  left: 112%;
+  font-size: 26px;
+margin-bottom: 0px;
+}
+  .hamburger-menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  margin: 0 0px; 
+     margin-bottom: 0px; 
+    z-index: 100;
+    left: -12px;
+}
+.home-section  .p-input-icon-left > i:first-of-type {
+  left: -1.5rem;
+  z-index: 1;
+}
+.hamburger-menu .label-hamburger-menu {
+  position: absolute;
+  top: 38%;
+}
+.surface-ground{
+  padding: 7px;
+}
+
+.sidebar.sidebar-close ~ .home-section {
+  left: 0px;
+  width: calc(100% - 0px);
+}
+.sidebar .logo-details {
+  width: 100%;
+  padding: 40px 24px 13px 19px;
+}
+}
+// mobile responsive ends here
 
 
   
