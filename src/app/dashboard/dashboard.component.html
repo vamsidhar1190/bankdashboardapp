@@ -96,7 +96,7 @@
             </div>
             <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart" [labels]="chartOptions2.labels"
                 [fill]="chartOptions2.fill" [dataLabels]="chartOptions2.dataLabels"
-                [responsive]="chartOptions2.responsive"></apx-chart>
+                [responsive]="chartOptions2.responsive" class="chart-info-content"></apx-chart>
             <div class="expenes-data">
                 <div>
                     <h6 class="expens-data">Daily</h6>
@@ -147,14 +147,44 @@
 
             </div>
             <div *ngFor="let data of transactions" class="main-data">
+                <table class="main-display-table-block">
+                   
+                    <tr>
+                        <td>
                 <p> <img [src]="data.img" alt="" class="transaction-img"></p>
-                <h6> {{data.Name}}</h6>
-                <h6>{{data.App}}</h6>
-                <h6>{{data.Date}}</h6>
-                <h6>{{data.time}}</h6>
-                <h6>{{data.Amount}}</h6>
-                <h6 [ngClass]="{'text-danger': data.Status==='Pending','text-success':data.Status==='Completed'}">
-                    {{data.Status}}<i class="pi pi-angle-down ms-3"></i></h6>
+                          
+                        </td>
+                        <td>
+                            <h6> {{data.Name}}</h6>
+                        </td>
+                        <td>
+                            <h6>{{data.App}}</h6>
+
+
+                        </td>
+                        <td>
+                            <h6>{{data.Date}}</h6>
+
+                           
+                        </td>
+                        <td>
+                         
+                            <h6>{{data.time}}</h6>
+                        </td>
+                        <td>
+                            <h6>{{data.Amount}}</h6>
+
+                        </td>
+                        <td>
+
+                            <h6 [ngClass]="{'text-danger': data.Status==='Pending','text-success':data.Status==='Completed'}">
+                                {{data.Status}}<i class="pi pi-angle-down ms-3"></i></h6>
+                        </td>
+                    </tr>
+                   
+                </table>
+               
+          
             </div>
         </div>
         <div class="main-card-data">

@@ -392,15 +392,31 @@
 
 .main-data {
     display: flex;
-    justify-content: space-around;
+    padding-top: 15px;
 }
 
 .main-data h6 {
     margin-top: 15px;
 }
+.main-display-table-block{
+    width: 100%;
+    td{
+        width: 10%;
+    
+    }
+    h6{
+        text-align: left;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}
 
 .transactions {
     width: 74%;
+}
+.chart-info-content{
+    overflow: hidden;
 }
 
 .main-card-data {
