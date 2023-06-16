@@ -56,7 +56,7 @@ interface data {
 })
 export class DashboardComponent implements OnInit {
   transactions: any[] = [];
-
+  public transactionsResult:any[]=[]
   public chartOptions1: any;
 
   public chartOptions2: any;
@@ -83,18 +83,35 @@ export class DashboardComponent implements OnInit {
     this.transcation.getdata().subscribe((data) => {
       this.transactions = data;
       console.log(this.transactions);
+      this.transcation.getdata().subscribe((data) => {
+        this.transactions = data;
+        this.transactions.filter((data)=>{
+          this.transactionsResult=data.transactiosnsSixMonths
+        })
+      });
     });
   }
 
   onDropdownChange() {
     console.log(this.selectdata);
     // Check the selected option and trigger data retrieval accordingly
-    if (this.selectdata.code === 'months') {
+    if (this.selectdata.name === '6months') {
       // Handle 6 months data retrieval
-      this.transctiondata();
-    } else if (this.selectdata.code === 'years') {
+      this.transcation.getdata().subscribe((data) => {
+        this.transactions = data;
+        this.transactions.filter((data)=>{
+          this.transactionsResult=data.transactiosnsSixMonths
+        })
+      });
+      
+    } else{
       // Handle 1 year data retrieval
-      this.transctiondata();
+      this.transcation.getdata().subscribe((data) => {
+        this.transactions = data;
+        this.transactions.filter((data)=>{
+          this.transactionsResult=data.transactiosnsOneYear
+        })
+      });
     }
   }
 
